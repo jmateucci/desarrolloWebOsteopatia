@@ -1,0 +1,31 @@
+// Imagenes Nuestro Equipo
+
+.container__titulo{
+    height: 220px;
+    width: 200px;
+    margin-left: 130px;
+    display: flex;   
+}
+
+.container__titulo--imagen{
+    margin-right: 40px;    
+}
+
+
+// Contenido Principal Nuestro Equipo
+
+.contenido__equipo--h1{
+    font-size: 15px;
+    color: black;
+    margin-left: 130px;
+    margin-top: 20px;
+    padding-top: 15px;
+    font-weight:bold;
+
+}
+
+.contenido__equipo--h1--parrafo{
+    font-size: 12px;
+    margin-left: 130px;
+    margin-right: 100px;
+}

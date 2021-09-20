@@ -1,0 +1,103 @@
+*{
+  margin: 0;
+  padding: 0; 
+}
+  
+
+@import "styleNuestroEquipo";
+@import "styleEspecialidades";
+
+
+/*HEADER MENU*/
+
+header nav .flexMenuBarraNavegacion{
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 25px;
+  align-items: center;
+  font-size: 14px;
+  
+}
+
+.flexMenuBarraNavegacion li a{
+  text-decoration:none;
+  color:black;
+
+}
+
+
+.flexMenuBarraNavegacion{
+  display: inline-block;
+  text-decoration: none;
+
+}
+
+
+nav li{
+  list-style: none;
+}
+
+nav li>ul{
+  display: none;
+  text-decoration: none;
+  
+}          
+
+nav li:hover{
+  background-color: lightskyblue;
+}
+
+nav li:hover>ul{
+  display:block;
+  position:absolute;
+  text-decoration: none;
+
+}
+
+header .tituloPrincipal{
+  color:lightskyblue;
+  text-align: center;
+  font-size: 40px;
+  padding: 40px;
+  padding-top: 0px;
+  padding-left: 70px;
+  float:left;
+  font-style: oblique;
+  margin-left: 0px;
+  font-family: 'Dancing Script', cursive;
+  margin: left 0;
+}
+
+header .tituloFrasePrincipal{
+  color:lightskyblue;
+  text-align: right;
+  font-size: 20px;
+  padding: 40px;
+  padding-top: 12px;
+  padding-right: 25px;
+  font-style: oblique;
+  margin-left:0px;
+  font-family: 'Dancing Script', cursive;
+  float: left;
+}
+
+.logoPortadaPrincipal{
+  height: 120px;
+  width: 190px;
+  padding-top: 0px;
+  margin-top: -26px;
+  float:left;
+  background-color:teal;
+}
+
+/*CARROUSEL IMAGENES INDEX*/
+
+.carrousel{
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 5px;
+ }
+
