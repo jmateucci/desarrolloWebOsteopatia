@@ -1,0 +1,54 @@
+
+html, body{
+
+}
+
+.tituloTrainingPilates{
+    text-align: left;
+    font-size: 16px;
+    color: blue;
+    margin-top: 120px;
+    margin-left: 130px;
+}
+
+
+.tituloTrainingPilates__parrafo{
+background-color: white;
+font-size: 12px;
+margin-left: 130px;
+}
+
+
+.container{
+    padding: 0,1em;
+}
+
+.tituloTrainingHipopresivo{
+    text-align: left;
+    font-size: 16px;
+    color: blue;
+    margin-top: 70px;
+    margin-left: 130px;
+}
+
+
+.imagenMetodosPilates{
+    list-style: none;
+    display: flex;
+    padding-right: 840px;
+    padding-top: 30px;
+    margin-right: 150px;
+   
+    }
+
+.imagenMetodosPilates{
+    flex-grow: 1;
+    position: relative;
+    
+}
+
+ul li a span {
+    color:black;
+    left: 15px;
+    font-size: .7em;
+}

@@ -6,6 +6,12 @@
 
 @import "styleNuestroEquipo";
 @import "styleEspecialidades";
+@import "variables";
+@import "styleEstetica";
+@import "styleTraining";
+@import "styleContacto";
+
+
 
 
 /*HEADER MENU*/
@@ -101,3 +107,44 @@ header .tituloFrasePrincipal{
   padding-top: 5px;
  }
 
+/*OPERACIONES MATEMATICAS*/
+
+
+.categoriaClienteUno{
+  background-color: $gold;
+  width: $valor*2;
+  margin-top: 130px;
+  margin-left: 130px;
+  margin-right: 140px;
+}
+
+
+.categoriaClienteDos{
+  background-color:$black;
+  width: $valor*4;
+  margin-top: 130px;
+  margin-left: 130px;
+  margin-right: 140px;
+}
+
+.categoriaClienteTres{
+  background-color:$platinum;
+  width: $valor*6;
+  margin-top: 130px;
+  margin-left: 130px;
+  margin-right: 140px;
+}
+
+/*CONDICIONAL IF CONDICIONAL*/
+
+p{
+  @if $modo == oscuro{
+    background-color:white;
+  }
+  @else if $modo == claro{
+    background-color: lightblue;
+  }
+  @else{
+    color:black;
+  } 
+}

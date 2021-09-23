@@ -11,5 +11,13 @@
     "nodemon": "^2.0.12"
   },
   "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmateucci/desarrolloWebOsteopatia.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jmateucci/desarrolloWebOsteopatia/issues"
+  },
+  "homepage": "https://github.com/jmateucci/desarrolloWebOsteopatia#readme",
   "description": ""
 }

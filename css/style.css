@@ -29,22 +29,136 @@
   margin-right: 100px;
 }
 
-.container__titulo {
-  height: 220px;
-  width: 200px;
-  margin-left: 130px;
+.contenedor__imagen {
+  margin-top: 20px;
+  height: 350px;
+  width: 650px;
+  margin-right: 150px;
+  border-radius: 50px;
 }
 
-.container__titulo--imagen {
-  margin-right: 40px;
+.contenedor__imagen--titulo {
+  margin-top: -360px;
+  margin-left: 150px;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: bold;
 }
 
-.container__titulo--imagen--dos {
-  float: right;
+.contenedor__imagen--titulo--parrafo {
+  margin-left: 150px;
+  line-height: 1, 5em;
+  font-size: 12px;
 }
 
 p {
-  background-color: brown;
+  max-width: 300px;
+  text-align: left;
+  vertical-align: middle;
+  text-align: justify;
+  line-height: 1, 5em;
+}
+
+.contenedor__imagen--pilates {
+  margin-top: 130px;
+  height: 350px;
+  width: 650px;
+  margin-left: 150px;
+  border-radius: 50px;
+}
+
+.contenedor__imagen--titulo--pilates {
+  margin-top: -350px;
+  margin-left: 830px;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.contenedor__imagen--titulo--parrafo--pilates {
+  margin-left: 830px;
+  line-height: 1, 5em;
+  font-size: 12px;
+  max-width: 300px;
+  text-align: left;
+  vertical-align: middle;
+  text-align: justify;
+  line-height: 1, 5em;
+}
+
+.tituloTrainingPilates {
+  text-align: left;
+  font-size: 16px;
+  color: blue;
+  margin-top: 120px;
+  margin-left: 130px;
+}
+
+.tituloTrainingPilates__parrafo {
+  background-color: white;
+  font-size: 12px;
+  margin-left: 130px;
+}
+
+.container {
+  padding: 0, 1em;
+}
+
+.tituloTrainingHipopresivo {
+  text-align: left;
+  font-size: 16px;
+  color: blue;
+  margin-top: 70px;
+  margin-left: 130px;
+}
+
+.imagenMetodosPilates {
+  list-style: none;
+  display: flex;
+  padding-right: 840px;
+  padding-top: 30px;
+  margin-right: 150px;
+}
+
+.imagenMetodosPilates {
+  flex-grow: 1;
+  position: relative;
+}
+
+ul li a span {
+  color: black;
+  left: 15px;
+  font-size: 0.7em;
+}
+
+.formmulario {
+  margin-top: 120px;
+  padding-left: 840px;
+}
+
+form {
+  font-size: 16px;
+  color: #6B121B;
+  border-radius: 7px;
+  padding: 14px;
+}
+
+.cuadroForm {
+  border-radius: 10px;
+  border: 1px dotted black;
+  margin-bottom: 15px;
+  padding: 0 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.leyendaForm {
+  color: black;
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+.textoParrafo {
+  background-color: white;
 }
 
 /*HEADER MENU*/
@@ -129,6 +243,36 @@ header .tituloFrasePrincipal {
   padding-left: 100px;
   padding-right: 100px;
   padding-top: 5px;
+}
+
+/*OPERACIONES MATEMATICAS*/
+.categoriaClienteUno {
+  background-color: gold;
+  width: 100;
+  margin-top: 130px;
+  margin-left: 130px;
+  margin-right: 140px;
+}
+
+.categoriaClienteDos {
+  background-color: black;
+  width: 200;
+  margin-top: 130px;
+  margin-left: 130px;
+  margin-right: 140px;
+}
+
+.categoriaClienteTres {
+  background-color: silver;
+  width: 300;
+  margin-top: 130px;
+  margin-left: 130px;
+  margin-right: 140px;
+}
+
+/*CONDICIONAL IF CONDICIONAL*/
+p {
+  background-color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
