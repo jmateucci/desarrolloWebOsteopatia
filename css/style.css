@@ -21,7 +21,6 @@
   margin-top: 20px;
   padding-top: 15px;
   font-weight: bold;
-  background-color: blue;
 }
 
 .contenido__equipo--h1--parrafo {
@@ -139,7 +138,6 @@ ul li a span {
 
 form {
   font-size: 16px;
-  color: #6B121B;
   border-radius: 7px;
   padding: 14px;
 }
@@ -236,7 +234,6 @@ header .tituloFrasePrincipal {
   padding-top: 0px;
   margin-top: -26px;
   float: left;
-  background-color: teal;
 }
 
 /*CARROUSEL IMAGENES INDEX*/
