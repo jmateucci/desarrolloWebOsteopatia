@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -87,50 +86,6 @@ p {
   line-height: 1, 5em;
 }
 
-.contenedor__titulo--drenaje {
-  font-size: medium;
-  margin-left: 130px;
-  margin-top: 10px;
-  color: blue;
-}
-
-.contenedor__parrafo--drenaje {
-  margin-left: 130px;
-  font-size: small;
-}
-
-.contenedor__titulo--maderoterapia {
-  margin-top: -347px;
-  font-size: medium;
-  color: blue;
-  margin-left: 500px;
-}
-
-.contenedor__parrafo--maderoterapa {
-  margin-left: 500px;
-  font-size: small;
-}
-
-.contenedor__titulo--radiofrecuencia {
-  margin-top: -347px;
-  margin-left: 828px;
-  font-size: medium;
-  color: blue;
-}
-
-.contenedor__parrafo--radiofrecuencia {
-  margin-left: 830px;
-  font-size: small;
-}
-
-.container__video--drenajeLinfatico {
-  margin-right: 40px;
-}
-
-.container__video--maderoterapia {
-  margin-right: 25px;
-}
-
 .tituloTrainingPilates {
   text-align: left;
   font-size: 16px;
@@ -203,26 +158,6 @@ form {
 
 .textoParrafo {
   background-color: white;
-}
-
-.titulo__questionario {
-  margin-top: 150px;
-  margin-left: 130px;
-  background-color: cornflowerblue;
-  max-width: 50%;
-  font-family: monospace;
-}
-
-.questionario_evaluación {
-  margin-top: 25px;
-  max-width: 700px;
-  font-family: "Courier New", Courier, monospace;
-}
-
-.parrafo__condiciones--evaluacion {
-  font-size: 10px;
-  max-width: 100%;
-  font-family: cursive;
 }
 
 /*HEADER MENU*/
@@ -356,4 +291,4 @@ p {
   margin-top: 20px;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.scss.map */
