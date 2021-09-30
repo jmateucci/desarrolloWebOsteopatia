@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title> Usando Arrays </title>
+
+
+<script>
+
+	   var articulos=["zapatillas", "camiseta", "pantalon", "calcetines"];
+	
+	// var articulos=new Array("zapatillas", "camiseta", "pantalon"; "calcetines");
+	  
+	// var articulos=[] - SI NO SE LA CANTIDAD DE ELEMENTOS LO DECLARO VACIO.
+
+
+</script>
+
+
+</head>
+	
+<body>
+
+	<h1> Manejando Array </h1>
+    
+  	<script>
+	
+	document.write("<p> El primer articulo es <strong> ");// <strong> PONE EL TEXTO EN NEGRITA.-
+	
+	document.write(articulos[0] + "</strong> </p>");
+	
+    
+	document.write("<p> El ultimo articulo es <strong> ");
+	
+	document.write(articulos[0] + "</strong> </p>"); // a traves de lenght seria una forma de acceder a la ultima posición del array.
+	
+	
+	document.write("<p> El Segundo articulo es <strong>");
+	
+	document.write(articulos[2]+ "</strong> </p>");
+	
+	articulos.unshift("Balon");
+	
+	alert(articulos.length); // Dice que tiene 4. pero debo restarle 1. //document.write(articulos[articulos.lenght -1])
+	
+	
+	document.write("<p> Agregamos este elemento  <strong>");
+	document.write(articulos[0] + "</strong> </p>");
+	
+	
+	document.write("<p> Agreguemos un elemento mas al final <strong>");
+	
+	document.write(articulos[articulos.length-1] + "</strong> </p>"); // Cierre strong y parrafo.
+	
+	articulos.push(prompt("Introduce un articulo")); // Agregar un array desde el PROMPT
+	
+	document.write(articulos[articulos.lenght-1]+ "</strong> </p>");
+	
+	 // PARA SABER QUE HAY ALMACENADO EN EL ARRAY // SIN USAR BUCLE
+		
+		document.write(articulos [1] + "<br/>");
+		document.write(articulos [2] + "<br/>");
+		document.write(articulos [3] + "<br/>");
+		document.write(articulos [4] + "<br/><p/>");
+		
+	
+	alert(" Cuidado, va a borrar un elemento");
+	
+	articulo.shift();
+	
+	document.write("<p>" + articulos[0] + "<br/>");
+	document.write(articulos [1] + "<br/>");
+	document.write(articulos [2] + "<br/>");
+	document.write(articulos [3] + "<br/>");
+		
+	
+	
+    </script>
+
+	
+</body>
+</html>

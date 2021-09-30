@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Documento sin título</title>
+</head>
+
+<script>
+
+	var repetir="si";
+	
+	function suma(num1,num2){
+	
+	alert("La suma es: " + (num1+num2));
+	
+	}
+
+	function resta(num1,num2){
+	
+	alert("La resta es: " + (num1-num2));
+	
+	}
+
+	function multiplica(num1,num2){
+	
+	alert("La multiplicacion es: " + (num1*num2));
+	
+	}
+
+	function divide(num1,num2){
+	
+	alert("La division es: " + (num1/num2));
+	
+	}
+	
+	do {
+		
+	var operacion=prompt("Que operacion quieres realizar");
+	
+	var operador1=parseInt (prompt("Introduce primer numero"));
+	var operador2=parseInt (prompt("Introduce segundo numero"));
+	
+	if(operacion=="sumar"){ 
+		suma(operador1,operador2);	
+	}
+	
+	else if(operacion=="restar"){
+		resta(operador1,operador2)
+		
+	}
+
+	else if(operacion=="multiplicar"){
+		multiplica(operador1,operador2)	
+	}
+	
+	else if(operacion=="dividir"){
+		divide(operador1,operador2)
+	}
+	
+	else{
+		alert("operacion no contemplada");
+	
+	}
+	
+	repetir=prompt("desea repetir")
+	
+	} 
+	
+	while(repetir="si"){
+		}
+</script>
+
+
+
+
+<body>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Documento sin título</title>
+</head>
+
+<body>
+
+<input type="button" id="boton1" /> 
+<input type="button" id="boton2" />
+<input type="text" id="micuadro" />
+
+<script>
+
+
+	var miboton=document.getElementById("boton1"); // Almacenar dentro de esta variable "miboton", el objeto "boton1" que tenemos dentro de nuestro document.
+
+	var miboton2=document.getElementById("boton2");
+	
+	var cuadrotexto=document.getElementById("micuadro");
+	
+
+	miboton.style.width="300px";
+	miboton.style.height="300px";
+		
+	miboton2.style.width="300px";
+	miboton2.style.height="300px";
+
+	// miboton.style.background="blue";
+	
+	cuadrotexto.style.background="red";
+	cuadrotexto.value="Escriba aquí:";
+	cuadrotexto.style.height="150px";
+	
+	miboton2.focus();
+	
+	
+	
+</script>
+
+
+
+</body>
+</html>

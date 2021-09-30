@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Documento sin título</title>
+
+<script>
+
+	var aleatorio=Math.round(Math.random()*100);
+	var minum;
+	var intentos;
+	
+	minum=0;
+	intentos=0;
+	
+	do {
+		minum=prompt("Introduce un Numero entre 0 y 100");
+		
+		if(aleatorio>minum){
+			
+			alert("Mas alto");
+			}
+			
+		if(aleatorio<minum){
+			
+			alert("Mas bajo");
+			}
+		
+		intentos++; // incremento en 1 la variable intento.
+	}
+	while(aleatorio!=minum);
+			
+			alert("Correcto has consumido " + intentos + " intentos");
+	
+		// esta instruccion se va a repetir siempre y cuando el número que ha generado sea igual a 100.
+
+</script>
+
+
+
+
+
+</head>
+<body>
+</body>
+</html>

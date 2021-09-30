@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Documento sin título</title>
+
+<script>
+
+	var Trabajadores=new array();
+	
+	var persona=""; // Comilla doble: es cadena vacia
+	
+	var contador=0;
+	
+	while(persona!="salir"){
+		
+		persona=prompt("Introduce Trabajador"); // Mientras persona sea diferente a salir (cadena vacia es diferente de salir).
+		
+		Trabajadores[contador]=persona; // contador la primera vez que entramos en el bucle vale 0. trabajadores de 0, es igual a 				        persona.
+		
+		contador ++; //  Incrementamos el valor de la variable contador. Salimos del bucle cuando ingresemos la palabra salir.
+		
+		}
+		
+	Trabajadores.pop(); // eliminar ultimo elemento de array.	
+		
+	for(var i=0; i<Trabajadores.length; i++){
+		document.write(Trabajadores[i] + "<br/>");
+		
+	}
+
+</script>
+
+
+
+</head>
+
+<body>
+</body>
+</html>

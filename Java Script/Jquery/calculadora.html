@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Documento sin título</title>
+
+<script>
+
+	var numero1=prompt("Introduce el primer numero");
+	var numero2=prompt("Introduce el segundo numero");
+	
+	alert(typeof(numero1)); // saber que el tipo de caracter
+	
+	if(!isNaN(numero1) && !isNaN(numero2)){
+	
+		var operacion=prompt("Introduce la operacion:suma/resta/multiplicacion/division");
+	
+		if(operacion=="suma"){
+		alert(parseInt(numero1)+parseInt(numero2));// pase a numero entero a numero 1 y a numero 2. Convierte a entero un numero
+		}
+		
+		else if(operacion=="resta"){
+		alert(parseInt(numero1)-parseInt(numero2));	
+		}
+
+		else if(operacion=="multiplicacion" || operacion=="multiplicación"){
+		alert(parseInt(numero1)*parseInt(numero2));	
+		}
+	
+		else if(operacion=="division" || operacion=="división"){
+		alert(parseInt(numero1)/parseInt(numero2));	
+		}
+	
+		else {
+		
+		
+		alert("operación no contemplada");	
+		}
+	}
+	
+	else{
+		
+		if(typeof(numero1)=="string" || typeof(numero2)=="string"){
+		alert("Has introducido valores numericos");
+			}
+			
+	else("Ocurrio un error inesperado");
+	}
+</script>
+
+
+
+</head>
+
+<body>
+</body>
+</html>
