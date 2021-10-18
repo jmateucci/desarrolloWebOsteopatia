@@ -2,6 +2,39 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62, 5%;
+  line-height: 1;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*Variables utilizando selector root
+para mobile firts*/
+:root {
+  --theme-color:white;
+  --primary-color:blue;
+  --secundary-color:orange;
+  --text-color-inverse:black;
+  --text-color:black;
+  --navbar-shallow-color:rgb(70, 67, 99);
+  --menu-mobile-background-color: rgb(63, 70, 136);
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--theme-color);
+  color: var(--text-color);
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 
 .container__titulo {
@@ -167,8 +200,7 @@ p {
 }
 
 .imagenMetodosPilates {
-  flex-grow: 1;
-  position: relative;
+  display: none;
 }
 
 ul li a span {
@@ -236,11 +268,18 @@ header nav .flexMenuBarraNavegacion {
   padding: 25px;
   align-items: center;
   font-size: 14px;
+  margin: 0;
+  max-width: 980px;
+  margin: 0 auto;
+  left: 0;
+  top: 0;
+  width: 100%;
 }
 
-.flexMenuBarraNavegacion li a {
+.flexMenuBarraNavegacion > li > a {
   text-decoration: none;
   color: black;
+  padding: 10px;
 }
 
 .flexMenuBarraNavegacion {
@@ -279,6 +318,7 @@ header .tituloPrincipal {
   margin-left: 0px;
   font-family: "Dancing Script", cursive;
   margin: left 0;
+  font-weight: 500;
 }
 
 header .tituloFrasePrincipal {
@@ -292,6 +332,7 @@ header .tituloFrasePrincipal {
   margin-left: 0px;
   font-family: "Dancing Script", cursive;
   float: left;
+  font-weight: 500;
 }
 
 .logoPortadaPrincipal {
@@ -304,8 +345,7 @@ header .tituloFrasePrincipal {
 
 /*CARROUSEL IMAGENES INDEX*/
 .carrousel {
-  padding-left: 100px;
-  padding-right: 100px;
+  margin-left: 170px;
   padding-top: 5px;
 }
 
@@ -342,20 +382,20 @@ p {
 /*Novedades HOME Parrafo Novedades / Noticias / Lesiones en el deporte*/
 .novedadesHome {
   margin-top: 25px;
-  margin-left: 100px;
+  margin-left: 170px;
   margin-bottom: 10px;
 }
 
 .card {
-  margin-left: -10px;
+  margin-left: 70px;
   font-size: 14px;
 }
 
 .box {
   display: flex;
-  justify-content: space-evenly;
-  margin-left: 15px;
-  margin-top: 20px;
+  margin-left: 85px;
+  margin-bottom: 15px;
+  margin-right: 50px;
 }
 
 /*ICONOS REDES SOCIALES*/
@@ -365,7 +405,310 @@ p {
   top: 50px;
   right: 0;
   margin-top: -20px;
-  margin-right: 15px;
+  margin-right: 80px;
+}
+
+.division_pie {
+  margin-bottom: -15px;
+  background-color: blueviolet;
+}
+
+.divisionPie {
+  margin-bottom: 15px;
+  width: 980px;
+}
+
+.open-menu,
+.close-menu {
+  display: none;
+}
+
+.tituloPrincipalMobile {
+  display: none;
+}
+
+/*MEDIA QUERYS*/
+/*Mobile First Menú HOME*/
+@media screen and (max-width: 950px) {
+  header nav .flexMenuBarraNavegacion {
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    align-items: left;
+    overflow-y: auto;
+    overflow-x: auto;
+    line-height: 50px;
+    background-color: var(--menu-mobile-background-color);
+    opacity: 0.5;
+    transition: opacity 0.3s;
+  }
+
+  nav li {
+    padding: 0%;
+  }
+
+  .open-menu,
+.close-menu {
+    display: block;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+
+  .close-menu {
+    align-self: flex-end;
+    padding: 20px 15px;
+    border-radius: 15px;
+  }
+
+  .menu_opened {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  .flexMenuBarraNavegacion a {
+    color: var(--text-color-inverse);
+    line-height: 30px;
+  }
+
+  .tituloPrincipal {
+    display: none;
+  }
+
+  .imagenLogo {
+    align-content: left;
+    padding: 50px 25px;
+    width: 96%;
+    max-width: 960px;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+  }
+
+  .imagenLogoMobile {
+    display: block;
+    margin: auto;
+    justify-content: center;
+    border-radius: 5px;
+  }
+
+  .containerHomeMobile {
+    display: block;
+    margin: auto;
+    justify-content: center;
+    background-color: lightskyblue;
+  }
+
+  .logoPortadaPrincipalHomeMobile {
+    border-radius: inherit;
+  }
+
+  .logoPortadaPrincipal {
+    max-height: 140px;
+    max-width: 160px;
+    padding-top: 5px;
+  }
+
+  .tituloPrincipalMobile {
+    font-size: 12px;
+  }
+
+  #carouselExampleControls {
+    display: none;
+  }
+
+  .novedadesHome {
+    display: none;
+  }
+
+  .box {
+    display: none;
+  }
+
+  .tituloFrasePrincipal {
+    display: none;
+  }
+
+  .social {
+    display: none;
+  }
+}
+/*/*Mobile First NUESTRO EQUIPO*/
+/*Imagen*/
+@media (max-width: 950px) {
+  /*LOGO PRINCIPAL*/
+  .imagenLogo {
+    align-content: center;
+    padding: 50px 25px;
+    width: 96%;
+    max-width: 960px;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+  }
+
+  .logoPortadaPrincipal {
+    max-height: 140px;
+    max-width: 160px;
+    padding-top: 35px;
+  }
+
+  .container__titulo--imagen {
+    width: 25%;
+    height: 50%;
+    display: inline-block;
+  }
+
+  .contenido__equipo--h1 {
+    font-size: 12px;
+    color: black;
+    margin: 15px auto auto 15px;
+    padding-top: auto;
+    font-weight: bold;
+  }
+
+  .contenido__equipo--h1--parrafo {
+    font-size: 10 px;
+    margin: 15px auto auto 15px;
+    max-width: 910px;
+    padding-top: auto;
+  }
+
+  .socialMobile {
+    display: none;
+  }
+
+  header nav .flexMenuBarraNavegacionMobile {
+    flex-direction: column;
+    position: relative;
+    padding: 0%;
+    font-size: 10px;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: auto;
+    line-height: 0px;
+    background-color: var(--menu-mobile-background-color);
+  }
+
+  .imagenLogo {
+    align-content: center;
+    padding: 50px 25px;
+    width: 96%;
+    max-width: 960px;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+  }
+
+  .container {
+    padding: 40px;
+  }
+
+  .contenedor__imagen {
+    margin-left: 50px;
+    margin-top: 300px;
+    height: 150px;
+    width: 120px;
+    border-radius: 0px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+  }
+
+  .contenedor__imagen--titulo {
+    margin-left: 50px;
+    font-size: 13px;
+    font-style: italic;
+    font-weight: bold;
+  }
+
+  .contenedor__imagen--titulo--parrafo {
+    margin-left: 50px;
+    line-height: 1, 5em;
+    font-size: 11px;
+  }
+
+  p {
+    max-width: 300px;
+    text-align: left;
+    vertical-align: middle;
+    text-align: justify;
+    line-height: 1, 5em;
+  }
+
+  .contenedor__imagen--pilates {
+    margin-left: 50px;
+    height: 150px;
+    padding-top: 150px;
+    width: 120px;
+    margin-left: 25px;
+    border-radius: 0px;
+  }
+
+  .contenedor__imagen--titulo--pilates {
+    margin-left: 50px;
+    font-size: 13px;
+    font-style: italic;
+    font-weight: bold;
+    padding-top: 200px;
+  }
+
+  .contenedor__imagen--titulo--parrafo--pilates {
+    margin-left: 50px;
+    line-height: 1, 5em;
+    font-size: 11px;
+    max-width: 300px;
+    text-align: right;
+    vertical-align: center;
+    text-align: justify;
+    line-height: 1, 5em;
+  }
+
+  .contenedor__titulo--drenaje {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    color: blue;
+    height: 100%;
+    padding-top: -20px;
+    margin-left: 30px;
+    margin-top: -10x;
+  }
+
+  .contenedor__parrafo--drenaje {
+    display: inline-flex;
+    margin-left: 130px;
+    font-size: small;
+    margin-left: 30px;
+  }
+
+  .contenedor__titulo--maderoterapia {
+    display: none;
+  }
+
+  .contenedor__parrafo--maderoterapa {
+    display: none;
+  }
+
+  .contenedor__titulo--radiofrecuencia {
+    display: none;
+  }
+
+  .contenedor__parrafo--radiofrecuencia {
+    display: none;
+  }
+
+  .container__video--drenajeLinfatico {
+    display: none;
+  }
+
+  .container__video--maderoterapia {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
